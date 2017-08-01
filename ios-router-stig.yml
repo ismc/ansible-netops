@@ -2,8 +2,6 @@
 - hosts: ios_routers
   connection: local
   gather_facts: no
-  vars_files:
-    - network_vars.yml
 
   tasks:
     - include_role:
