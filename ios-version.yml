@@ -1,0 +1,14 @@
+---
+- hosts: ios_routers
+  connection: local
+  gather_facts: no
+
+  tasks:
+    - name: "Medium | V-3160 | The network element must be running a current and supported operating system with all IAVMs addressed."
+      include_role:
+        name: ios-version
+      vars:
+        ios_filename: c1900-universalk9-mz.SPA.155-3.M6.bin
+      tags:
+        - version
+

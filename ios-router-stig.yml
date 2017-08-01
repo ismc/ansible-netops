@@ -1,0 +1,12 @@
+---
+- hosts: ios_routers
+  connection: local
+  gather_facts: no
+  vars_files:
+    - network_vars.yml
+
+  tasks:
+    - include_role:
+        name: ios-router-stig
+      vars:
+        local_banner: "{{ bus8_banner }}"

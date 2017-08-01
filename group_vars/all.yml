@@ -1,4 +1,10 @@
 ---
+netops_provider:
+  host: "{{ inventory_hostname }}"
+  username: scarter
+  transport: cli
+#  password: "{{ netops_password | default (omit) }}"
+
 bus8_banner: |
   You are accessing a BUS8 Information System (IS) that is provided for
   BUS8-authorized use only. By using this IS (which includes any device attached
