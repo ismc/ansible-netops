@@ -1,0 +1,6 @@
+[submodule "roles/ios-router-stig"]
+	path = roles/ios-router-stig
+	url = git@github.com:ismc/ansible-role-ios-router-stig.git
+[submodule "roles/ios-version"]
+	path = roles/ios-version
+	url = git@github.com:ismc/ansible-role-ios-version.git
