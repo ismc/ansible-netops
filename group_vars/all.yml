@@ -1,9 +1,9 @@
 ---
 netops_provider:
   host: "{{ inventory_hostname }}"
-  username: scarter
+  username: "{{ netops_username | default (omit) }}"
   transport: cli
-#  password: "{{ netops_password | default (omit) }}"
+  password: "{{ netops_password | default (omit) }}"
 
 bus8_banner: |
   You are accessing a BUS8 Information System (IS) that is provided for
