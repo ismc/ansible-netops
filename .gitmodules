@@ -4,3 +4,6 @@
 [submodule "roles/ios-version"]
 	path = roles/ios-version
 	url = git@github.com:ismc/ansible-role-ios-version.git
+[submodule "roles/net-backup"]
+	path = roles/net-backup
+	url = git@github.com:ismc/ansible-role-net-backup.git

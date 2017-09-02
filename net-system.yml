@@ -1,0 +1,14 @@
+---
+- hosts: cil-tors
+  connection: local
+  gather_facts: no
+
+  tasks:
+    - set_fact:
+        hostname: "{{ inventory_hostname.split('.')[0] }}"
+        domain: "{{ inventory_hostname.split('.')[1:] | join('.') }}"
+
+    - name: Set system attributes 
+      net_system:
+        hostname: "{{ hostname }}" 
+        domain_name: "{{ domain }}" 

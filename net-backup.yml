@@ -1,0 +1,12 @@
+---
+- hosts: cil-tors, cil-core, cil-gw
+  connection: local
+  gather_facts: no
+
+  tasks:
+    - include_role:
+        name: net-backup-config
+      vars:
+        net_backup_root: /home/scarter/projects/ansible-netops/backups
+      tags:
+        - net-backup-config
