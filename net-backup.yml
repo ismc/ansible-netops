@@ -1,5 +1,5 @@
 ---
-- hosts: cil-tors, cil-core, cil-gw
+- hosts: all 
   connection: local
   gather_facts: no
 
